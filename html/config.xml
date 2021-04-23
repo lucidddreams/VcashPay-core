@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.jelurida.nxt.client.wallet" version="1.11.15" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Nxt Mobile Wallet</name>
+    <description>
+        Reference implementation mobile wallet for Nxt.
+    </description>
+    <author email="info@jelurida.com" href="https://jelurida.com/">
+        Jelurida
+    </author>
+    <version>1.11.15</version>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenDelay" value="1000" />
+    <preference name="FadeSplashScreenDuration" value="5000" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="loadUrlTimeoutValue" value="60000" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <platform name="android">
+    </platform>
+    <engine name="android" />
+    <plugin name="cordova-plugin-android-permissions"/>
+    <plugin name="cordova-plugin-console"/>
+    <plugin name="cordova-plugin-device"/>
+    <plugin name="cordova-plugin-file"/>
+    <plugin name="cordova-plugin-inappbrowser"/>
+    <plugin name="cordova-plugin-splashscreen"/>
+    <plugin name="cordova-plugin-statusbar"/>
+    <plugin name="cordova-plugin-whitelist"/>
+    <plugin name="cordova.plugins.diagnostic"/>
+    <plugin name="ionic-plugin-keyboard"/>
+    <plugin name="phonegap-plugin-barcodescanner"/>
+    <plugin name="cordova-android-support-gradle-release"/>
+</widget>
