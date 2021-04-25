@@ -4,7 +4,7 @@
         <property file="conf/nxt-default.properties" prefix="runtime"/>
     </properties>
     <info>
-        <appname>NXT</appname>
+        <appname>VCP</appname>
         <appversion>@{runtime.nxt.version}</appversion>
         <url>https://www.jelurida.com/</url>
         <run-privileged condition="izpack.windowsinstall"/>
