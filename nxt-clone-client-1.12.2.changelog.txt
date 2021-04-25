@@ -1,0 +1,13 @@
+Release 1.12.2
+
+https://www.jelurida.com/
+
+sha256 checksums:
+
+f2bee79872c74d854aa217102297c9b11a0338840203952844e2e9130cb214cd *VcashPay-client-1.12.2.exe
+802b3e47aa75f5d2454e723b24aeb997494997d5d8151eaef3627e1e5df3d10e *VcashPay-client-1.12.2.jar
+
+
+Change log:
+
+

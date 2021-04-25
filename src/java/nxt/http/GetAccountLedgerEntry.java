@@ -147,7 +147,7 @@ import javax.servlet.http.HttpServletRequest;
  *       <td>Change in the currency balance.  The currency identifier is the 'holding'.</td>
  *     </tr>
  *     <tr>
- *       <td>NXT_BALANCE</td>
+ *       <td>VCP_BALANCE</td>
  *       <td>Change in the NXT balance for the account.  There is no 'holding'.</td>
  *     </tr>
  *     <tr>

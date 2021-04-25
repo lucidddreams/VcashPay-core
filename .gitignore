@@ -39,3 +39,8 @@ deploy.sh
 /addons/src/*.java
 /out
 /nxt
+VcashPay-client-*.exe
+VcashPay-client-*.zip
+VcashPay-client-*.jar
+VcashPay.exe
+VcashPayservice.exe
