@@ -6,7 +6,7 @@
     <info>
         <appname>VCP</appname>
         <appversion>@{runtime.nxt.version}</appversion>
-        <url>https://www.jelurida.com/</url>
+        <url>https://coin.vcashpay.com/</url>
         <run-privileged condition="izpack.windowsinstall"/>
     </info>
 
