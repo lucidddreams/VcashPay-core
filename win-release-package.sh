@@ -11,7 +11,7 @@ echo PACKAGE="${PACKAGE}"
 CHANGELOG=nxt-clone-client-${VERSION}.changelog.txt
 OBFUSCATE=$2
 
-FILES="changelogs conf html lib resource contrib logs"
+FILES="changelogs conf html lib resource contrib logs nxt_db"
 FILES="${FILES} ${APPLICATION}.exe ${APPLICATION}service.exe"
 FILES="${FILES} 3RD-PARTY-LICENSES.txt AUTHORS.txt LICENSE.txt"
 FILES="${FILES} DEVELOPERS-GUIDE.md OPERATORS-GUIDE.md README.md README.txt USERS-GUIDE.md"

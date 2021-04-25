@@ -4,8 +4,8 @@ https://www.jelurida.com/
 
 sha256 checksums:
 
-f4fe42ab7e69dc6a6916eb13bc1f853512f694be63f9e2adea7e57184b30b452 *VcashPay-client-1.12.2.exe
-848f58651d63e3136f2ea7f70fcedd55bd52dc6bbd35ab3ca6a7e11062fe6fe8 *VcashPay-client-1.12.2.jar
+f2bee79872c74d854aa217102297c9b11a0338840203952844e2e9130cb214cd *VcashPay-client-1.12.2.exe
+802b3e47aa75f5d2454e723b24aeb997494997d5d8151eaef3627e1e5df3d10e *VcashPay-client-1.12.2.jar
 
 
 Change log:

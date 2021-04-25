@@ -15,6 +15,22 @@
 		desktop="yes"
         applications="no"
         startMenu="no"
+		startup="no"
+		runAsAdministrator="true">
+	</shortcut>	
+	<shortcut
+		name="VcashPay Wallet"
+		target="http://localhost:16876/index.html"
+		commandLine=""
+		workingDirectory="$INSTALL_PATH"
+        description="Launch VcashPay wallet in browser"
+		iconFile="$INSTALL_PATH\html\www\favicon.ico"
+        iconIndex="0"
+        initialState="normal"
+        programGroup="yes"
+		desktop="yes"
+        applications="no"
+        startMenu="no"
 		startup="no">
 	</shortcut>	
 </shortcuts>
