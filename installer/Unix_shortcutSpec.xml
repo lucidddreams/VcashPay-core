@@ -13,7 +13,7 @@
             desktop="yes"
             target="$INSTALL_PATH/start.sh"
             workingDirectory="$INSTALL_PATH"
-            description="Start VcashPay"
+            description="Start Nxt"
             iconFile="$INSTALL_PATH/html/www/img/nxt-icon-32x32.png"
             type="Application"
             encoding="UTF-8"
@@ -27,28 +27,13 @@
             desktop="yes"
             target="$INSTALL_PATH/stop.sh"
             workingDirectory="$INSTALL_PATH"
-            description="Shutdown VcashPay"
+            description="Shutdown Nxt"
             iconFile="$INSTALL_PATH/html/www/img/nxt-icon-32x32.png"
             type="Application"
             encoding="UTF-8"
             categories="Application;Network;"
             createForAll="true">
     </shortcut>
-
-    <!--
-    <shortcut
-            name="VcashPay Browser"
-            programGroup="yes"
-            desktop="no"
-            workingDirectory="$INSTALL_PATH"
-            iconFile="$INSTALL_PATH/html/www/img/nxt-icon-32x32.png"
-            url="http://localhost:7876/index.html"
-            type="link"
-            encoding="UTF-8"
-            categories="Application;Network;"
-            description="Open VcashPay wallet in browser">
-    </shortcut>
-    -->
 
     <shortcut
             name="VcashPay Uninstaller"
@@ -62,7 +47,7 @@
             encoding="UTF-8"
             categories="Application;Network;"
             createForAll="true"
-            description="Uninstall VcashPay">
+            description="Uninstall Nxt">
     </shortcut>
 
 
