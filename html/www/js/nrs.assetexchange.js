@@ -798,7 +798,7 @@ var NRS = (function (NRS, $, undefined) {
                 dividend.totalDividend = new BigInteger(dividend.totalDividend);
                 var holdingLink;
                 if (dividend.holdingType == "0") {
-                    holdingLink = "NXT";
+                    holdingLink = "VCP";
                 } else {
                     holdingLink = NRS.getTransactionLink(dividend.holding, dividend.holdingInfo.name);
                 }

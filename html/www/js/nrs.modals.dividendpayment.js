@@ -269,7 +269,7 @@ var NRS = (function(NRS, $) {
                 return {
                     holdingType    : "0",
                     holdingDecimals: 8,
-                    holdingName    : "NXT",
+                    holdingName    : "VCP",
                     holdingUnitName: " "
                 };
             case "1":

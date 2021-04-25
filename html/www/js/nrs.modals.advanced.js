@@ -190,11 +190,11 @@ var NRS = (function(NRS, $, undefined) {
 		$elems.find('input').prop("disabled", true);
 
 		context = {
-			labelText: "Amount NXT",
+			labelText: "Amount VCP",
 			labelI18n: "amount_nxt",
 			helpI18n: "approve_transaction_amount_help",
 			inputName: "phasingQuorumNXT",
-			addonText: "NXT",
+			addonText: "VCP",
 			addonI18n: "nxt_unit"
 		};
 		$elems = NRS.initModalUIElement($modal, '.approve_transaction_amount_nxt', 'simple_input_with_addon_modal_ui_element', context);

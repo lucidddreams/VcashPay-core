@@ -86,11 +86,11 @@ var NRS = (function(NRS, $) {
                 return function (callback) {
                     var from, to;
                     if (op == "buy") {
-                        from = "NXT";
+                        from = "VCP";
                         to = coins[i];
                     } else {
                         from = coins[i];
-                        to = "NXT";
+                        to = "VCP";
                     }
                     async.waterfall([
                         function(callback) {
@@ -118,7 +118,7 @@ var NRS = (function(NRS, $) {
                             symbol = coins[i];
                         } else {
                             rate = response.rate;
-                            symbol = "NXT";
+                            symbol = "VCP";
                         }
                         var row = "<tr><td>" + coins[i] + "</td>";
                         row += "<td><span>" + String(response.minAmount).escapeHTML() + "</span>&nbsp<span>" + symbol + "</span></td>";
