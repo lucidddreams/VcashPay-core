@@ -1367,6 +1367,7 @@ final class BlockchainProcessorImpl implements BlockchainProcessor {
                     addBlock(block);
                     accept(block, validPhasedTransactions, invalidPhasedTransactions, duplicates);
 
+                    BlockDb.commit(block);
                     Db.db.commitTransaction();
                 } catch (Exception e) {
                     Logger.logInfoMessage("Failed to accept an already validated block", e);
