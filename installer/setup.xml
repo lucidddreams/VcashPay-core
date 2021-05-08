@@ -162,8 +162,8 @@
             <file src="sign.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="passphraseRecovery.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <parsable targetfile="${INSTALL_PATH}/run.bat"/>
-            <singlefile src="resource/nxt.properties" target="${INSTALL_PATH}/resource/nxt.properties" override="true"/>
-            <singlefile src="resource/nxtservice.properties" target="${INSTALL_PATH}/resource/nxtservice.properties" override="true"/>
+            <singlefile src="resource/VcashPay.properties" target="${INSTALL_PATH}/resource/VcashPay.properties" override="true"/>
+            <singlefile src="resource/VcashPayservice.properties" target="${INSTALL_PATH}/resource/VcashPayservice.properties" override="true"/>
         </pack>
 
         <pack name="server.unix" os="unix" required="yes">
