@@ -1,79 +1,60 @@
-VcashPay Core integration/staging tree
-=====================================
+----
+# Welcome to VCP! #
 
-[![Build Status](https://travis-ci.org/vcashpay-project/vcashpay.svg?branch=master)](https://travis-ci.org/vcashpay-project/vcashpay)
+----
+## What is VCP? ##
+VCP is a cryptocurrency to make the world a better place.
 
-https://vcashpay.org
+----
+## Get it! ##
 
-What is VcashPay?
-----------------
+  - *dependencies*:
+    - *general* - Java 8
+    - *Ubuntu* - `http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html`
+    - *Debian* - `http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html`
+    - *FreeBSD* - `pkg install openjdk8`
 
-VcashPay is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. VcashPay uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. VcashPay Core is the name of open source
-software which enables the use of this currency.
+----
+## Run it! ##
 
-For more information, as well as an immediately useable, binary version of
-the VcashPay Core software, see [https://vcashpay.org](https://vcashpay.org).
+  - click on the VCP icon, or start from the command line:
+  - Unix: `./start.sh`
+  - Window: `run.bat`
 
-License
--------
+  - wait for the JavaFX wallet window to open
+  - on platforms without JavaFX, open http://localhost:16876/ in a browser
 
-VcashPay Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/licenses/MIT.
+----
+## Compile it! ##
 
-Development Process
--------------------
+  - if necessary with: `./compile.sh`
+  - you need jdk-8 as well
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/vcashpay-project/vcashpay/tags) are created
-regularly to indicate new official, stable release versions of VcashPay Core.
+----
+## Troubleshooting the NRS (VCP Reference Software) ##
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+  - How to Stop the NRS Server?
+    - click on VCP Stop icon, or run `./stop.sh`
+    - or if started from command line, ctrl+c or close the console window
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/vcashpay-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
+  - UI Errors or Stacktraces?
+    - report on BitBucket
 
-Developer IRC can be found on Freenode at #vcashpay-dev.
+  - Permissions Denied?
+    - no spaces and only latin characters in the path to the NRS installation directory
+    - known jetty issue
 
-Testing
--------
+----
+## Further Reading ##
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+  - in this repository:
+    - USERS-GUIDE.md
+    - DEVELOPERS-GUIDE.md
+    - OPERATORS-GUIDE.md
+    - In the doc folder
 
-### Automated Testing
+----
 
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/qa) of the RPC interface, written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/qa) are installed) with: `qa/pull-tester/rpc-tests.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
-
-Translations
-------------
-
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to VcashPay periodically.
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+## License
+* This program is distributed under the terms of the Jelurida Public License version 1.1 for the Ardor Public Blockchain Platform.
+* This source code has been generated by CoinGenerator - https://coingenerator.sh
