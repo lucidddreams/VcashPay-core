@@ -1,0 +1,13 @@
+<izpack:userinput version="5.0" 
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xmlns:izpack="http://izpack.org/schema/userinput" 
+                  xsi:schemaLocation="http://izpack.org/schema/userinput http://izpack.org/schema/5.0/izpack-userinput-5.0.xsd">
+  <panel id="mypanel">
+    <field type="staticText" align="left" txt="If you want to p" id="input.comment"/>
+    <field type="text" variable="proxyaddress">
+      <spec txt=" Your IP Address " id="input.proxy" size="25" set=""/>
+    </field>
+
+    </field>
+  </panel>
+</izpack:userinput>
