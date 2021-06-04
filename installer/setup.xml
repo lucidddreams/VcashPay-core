@@ -91,6 +91,7 @@
         <res id="Unix_shortcutSpec.xml" src="../installer/Unix_shortcutSpec.xml"/>
         <res id="RegistrySpec.xml" src="../installer/RegistrySpec.xml"/>
         <res id="installer.langsel.img" src="html/www/img/nxt_logo.png"/>
+        <res id="userInputSpec.xml" src="../installer/userInputSpec.xml" />
 	</resources>
 
     <variables>
@@ -105,6 +106,7 @@
         <panel classname="InfoPanel"/>
         <panel classname="TargetPanel"/>
         <panel classname="nxt.installer.ConfigPanel"/>
+        <panel classname="UserInputPanel"/>
         <panel classname="ShortcutPanel" condition="!izpack.macinstall"/>
         <panel classname="InstallPanel"/>
         <panel classname="SimpleFinishPanel"/>
