@@ -52,7 +52,6 @@
         <modifier key="paragraphYGap" value="10"/>
         <modifier key="filler1YGap" value="5"/>
         <modifier key="filler3XGap" value="10"/>
-        <modifier key="showDebugWindow" value="true"/>
     </guiprefs>
 
     <locale>
@@ -169,9 +168,9 @@
             <singlefile src="resource/VcashPayservice.properties" target="${INSTALL_PATH}/resource/VcashPayservice.properties" override="true"/>
             <executable targetfile="${INSTALL_PATH}/setup-firewall.bat" type="bin" stage="postinstall" failure ="warn" keep="true" >
                     <args>
+                        <arg value="${INSTALL_PATH}\conf\nxt.properties"/>
                         <arg value="${ipaddr}"/>
                         <arg value="${pwd}"/>
-                        <arg value="${INSTALL_PATH}"/>
                     </args>
             </executable>
         </pack>
