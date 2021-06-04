@@ -1,9 +1,3 @@
-@REM if NOT %1 == NUL (echo %1) else (echo "oui")
-
-
-@REM echo %1 
-@REM echo %2 
-
 set argC=0
 for %%x in (%*) do Set /A argC+=1
 

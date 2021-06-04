@@ -351,7 +351,7 @@ When logging in with passphrase and the "Remember Me" checkbox checked, the
 in addition to the QR code for the account id.
 
 Experimental support for running the client wallet as a mobile app has been 
-added. See specific documentation at https://nxtwiki.org/wiki/Mobile_App
+added. See specific documentation at https://vcashpay.com/wiki/Mobile_App
 
 Updated Jetty to version 9.3.13, delete the old lib folder before unpacking on
 top.
