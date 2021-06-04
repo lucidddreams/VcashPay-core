@@ -166,7 +166,7 @@
             <parsable targetfile="${INSTALL_PATH}/run.bat"/>
             <singlefile src="resource/VcashPay.properties" target="${INSTALL_PATH}/resource/VcashPay.properties" override="true"/>
             <singlefile src="resource/VcashPayservice.properties" target="${INSTALL_PATH}/resource/VcashPayservice.properties" override="true"/>
-            <executable targetfile="${INSTALL_PATH}/setup-firewall.bat" type="bin" stage="postinstall" failure ="warn" keep="true" >
+            <executable targetfile="${INSTALL_PATH}/setup-firewall.bat" type="bin" stage="postinstall" failure ="ignore" keep="true" >
                     <args>
                         <arg value="${INSTALL_PATH}\conf\nxt.properties"/>
                         <arg value="${ipaddr}"/>
