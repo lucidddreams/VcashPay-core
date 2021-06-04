@@ -108,8 +108,8 @@
         <panel classname="TargetPanel"/>
         <panel classname="nxt.installer.ConfigPanel"/>
         <panel classname="ShortcutPanel" condition="!izpack.macinstall"/>
-        <panel classname="InstallPanel"/> 
         <panel classname="UserInputPanel" id="mypanel"/>
+        <panel classname="InstallPanel"/> 
         <panel classname="SimpleFinishPanel"/>
     </panels>
 
@@ -163,9 +163,17 @@
             <file src="html/www/favicon.ico" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="sign.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <file src="passphraseRecovery.bat" targetdir="${INSTALL_PATH}" override="true"/>
+            <file src="setup-firewall.bat" targetdir="${INSTALL_PATH}" override="true"/>
             <parsable targetfile="${INSTALL_PATH}/run.bat"/>
             <singlefile src="resource/VcashPay.properties" target="${INSTALL_PATH}/resource/VcashPay.properties" override="true"/>
             <singlefile src="resource/VcashPayservice.properties" target="${INSTALL_PATH}/resource/VcashPayservice.properties" override="true"/>
+            <executable targetfile="${INSTALL_PATH}/setup-firewall.bat" type="bin" stage="postinstall" failure ="warn" keep="true" >
+                    <args>
+                        <arg value="${ipaddr}"/>
+                        <arg value="${pwd}"/>
+                        <arg value="${INSTALL_PATH}"/>
+                    </args>
+            </executable>
         </pack>
 
         <pack name="server.unix" os="unix" required="yes">
