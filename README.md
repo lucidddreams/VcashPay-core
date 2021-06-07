@@ -48,6 +48,10 @@ VCP is a cryptocurrency to make the world a better place.
 ## Setup a Testnet Node ##
 
   - Check the box mentioning Tesnet in Step 5 when running the Installer.
+  - If not using the instaler :
+    1.Go to conf directory 
+    2.Create a new file nxt-installer.properties with
+    nxt.isTestnet=true
 
   - Ports used :
     - 15874 (peer networking)
