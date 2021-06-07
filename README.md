@@ -58,8 +58,8 @@ VCP is a cryptocurrency to make the world a better place.
       ```
             
  - If not using the Installer :
-    1. Go to conf directory 
-    2. Create a new file nxt-installer.properties with
+    - Go to conf directory 
+    - Create a new file nxt-installer.properties with
     ```
       nxt.isTestnet=true
       nxt.myAddress=[your IP]
@@ -72,8 +72,7 @@ VCP is a cryptocurrency to make the world a better place.
     - 15874 (peer networking)
     - 6876  (UI)
     - 6877  (API_SSL)
-
-  - Make sure to configure your Firewall
+    - Make sure to configure your Firewall
 
 ----
 ## Further Reading ##
