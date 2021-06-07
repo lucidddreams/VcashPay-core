@@ -72,7 +72,8 @@ VCP is a cryptocurrency to make the world a better place.
     - 15874 (peer networking)
     - 6876  (UI)
     - 6877  (API_SSL)
-make sure to configure your firewall
+
+  - Make sure to configure your Firewall
 
 ----
 ## Further Reading ##
