@@ -56,7 +56,7 @@ VCP is a cryptocurrency to make the world a better place.
     nxt.myAddress=`[your IP]`
     nxt.apiServerHost=`[your IP]`
     nxt.adminPassword=`[your password]`
-    nxt.allowedBotHosts=*
+    nxt.allowedBotHosts=`*`
 
   - Ports used :
     - 15874 (peer networking)
