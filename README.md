@@ -45,6 +45,36 @@ VCP is a cryptocurrency to make the world a better place.
     - known jetty issue
 
 ----
+## Setup a Testnet Node ##
+
+  - Windows Installer
+    - Check the box mentioning Tesnet in Step 5 when running the Installer.
+    - Configure nxt.properties (roaming/VCASHPAY/conf) as following
+      ```
+      nxt.myAddress=[your IP]
+      nxt.apiServerHost=[your IP]
+      nxt.adminPassword=[your password]
+      nxt.allowedBotHosts=*
+      ```
+            
+ - If not using the Installer :
+    - Go to conf directory 
+    - Create a new file nxt-installer.properties with
+    ```
+      nxt.isTestnet=true
+      nxt.myAddress=[your IP]
+      nxt.apiServerHost=[your IP]
+      nxt.adminPassword=[your password]
+      nxt.allowedBotHosts=*
+      ```
+      
+  - Ports used :
+    - 15874 (peer networking)
+    - 6876  (UI)
+    - 6877  (API_SSL)
+    - Make sure to configure your Firewall
+
+----
 ## Further Reading ##
 
   - in this repository:
