@@ -52,6 +52,11 @@ VCP is a cryptocurrency to make the world a better place.
     1.Go to conf directory 
     2.Create a new file nxt-installer.properties with
     nxt.isTestnet=true
+    3.Configure nxt.properties (roaming/VCASHPAY/conf) as following
+    nxt.myAddress=`[your IP]`
+    nxt.apiServerHost=`[your IP]`
+    nxt.adminPassword=`[your password]`
+    nxt.allowedBotHosts=*
 
   - Ports used :
     - 15874 (peer networking)
