@@ -47,23 +47,32 @@ VCP is a cryptocurrency to make the world a better place.
 ----
 ## Setup a Testnet Node ##
 
-  - Check the box mentioning Tesnet in Step 5 when running the Installer.
-  - If not using the Installer :
+  - Windows Installer
+    - Check the box mentioning Tesnet in Step 5 when running the Installer.
+    - Configure nxt.properties (roaming/VCASHPAY/conf) as following
+      ```
+      nxt.myAddress=[your IP]
+      nxt.apiServerHost=[your IP]
+      nxt.adminPassword=[your password]
+      nxt.allowedBotHosts=*
+      ```
+            
+ - If not using the Installer :
     1. Go to conf directory 
     2. Create a new file nxt-installer.properties with
-    nxt.isTestnet=true
-    3. Configure nxt.properties (roaming/VCASHPAY/conf) as following
     ```
-    nxt.myAddress=[your IP]
-    nxt.apiServerHost=[your IP]
-    nxt.adminPassword=[your password]
-    nxt.allowedBotHosts=*
-    ```
-
+      nxt.isTestnet=true
+      nxt.myAddress=[your IP]
+      nxt.apiServerHost=[your IP]
+      nxt.adminPassword=[your password]
+      nxt.allowedBotHosts=*
+      ```
+      
   - Ports used :
     - 15874 (peer networking)
     - 6876  (UI)
     - 6877  (API_SSL)
+make sure to configure your firewall
 
 ----
 ## Further Reading ##
