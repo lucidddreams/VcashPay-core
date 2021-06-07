@@ -49,10 +49,10 @@ VCP is a cryptocurrency to make the world a better place.
 
   - Check the box mentioning Tesnet in Step 5 when running the Installer.
   - If not using the Installer :
-    1.Go to conf directory 
-    2.Create a new file nxt-installer.properties with
+    1. Go to conf directory 
+    2. Create a new file nxt-installer.properties with
     nxt.isTestnet=true
-    3.Configure nxt.properties (roaming/VCASHPAY/conf) as following
+    3. Configure nxt.properties (roaming/VCASHPAY/conf) as following
     nxt.myAddress=`[your IP]`
     nxt.apiServerHost=`[your IP]`
     nxt.adminPassword=`[your password]`
