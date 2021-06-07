@@ -55,7 +55,7 @@ VCP is a cryptocurrency to make the world a better place.
 
   - Ports used :
     - 15874 (peer networking)
-    - 6876  (API)
+    - 6876  (UI)
     - 6877  (API_SSL)
 
 ----
