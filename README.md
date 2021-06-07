@@ -45,6 +45,16 @@ VCP is a cryptocurrency to make the world a better place.
     - known jetty issue
 
 ----
+## Setup a Testnet Node ##
+
+  - Check the box mentioning Tesnet in Step 5 when running the Installer.
+
+  - Ports used :
+    - 6874 (peer networking)
+    - 6875 (UI)
+    - 6876 (API)
+
+----
 ## Further Reading ##
 
   - in this repository:
