@@ -91,7 +91,7 @@
         <res id="Unix_shortcutSpec.xml" src="../installer/Unix_shortcutSpec.xml"/>
         <res id="RegistrySpec.xml" src="../installer/RegistrySpec.xml"/>
         <res id="installer.langsel.img" src="html/www/img/nxt_logo.png"/>
-        <res id="userInputSpec.xml" src="../installer/userInputSpec.xml" />
+        <!-- <res id="userInputSpec.xml" src="../installer/userInputSpec.xml" /> -->
 	</resources>
 
     <variables>
@@ -107,7 +107,7 @@
         <panel classname="TargetPanel"/>
         <panel classname="nxt.installer.ConfigPanel"/>
         <panel classname="ShortcutPanel" condition="!izpack.macinstall"/>
-        <panel classname="UserInputPanel" id="mypanel"/>
+        <!-- <panel classname="UserInputPanel" id="mypanel"/> -->
         <panel classname="InstallPanel"/> 
         <panel classname="SimpleFinishPanel"/>
     </panels>
@@ -167,10 +167,10 @@
             <singlefile src="resource/VcashPay.properties" target="${INSTALL_PATH}/resource/VcashPay.properties" override="true"/>
             <singlefile src="resource/VcashPayservice.properties" target="${INSTALL_PATH}/resource/VcashPayservice.properties" override="true"/>
             <executable targetfile="${INSTALL_PATH}/setup-firewall.bat" type="bin" stage="postinstall" failure ="ignore" keep="true" >
-                    <args>
+                    <!-- <args>
                         <arg value="${ipaddr}"/>
                         <arg value="${pwd}"/>
-                    </args>
+                    </args> -->
             </executable>
         </pack>
 
