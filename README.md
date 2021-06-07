@@ -50,9 +50,9 @@ VCP is a cryptocurrency to make the world a better place.
   - Check the box mentioning Tesnet in Step 5 when running the Installer.
 
   - Ports used :
-    - 6874 (peer networking)
-    - 6875 (UI)
-    - 6876 (API)
+    - 15874 (peer networking)
+    - 6876  (UI)
+    - 6877  (API)
 
 ----
 ## Further Reading ##
