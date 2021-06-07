@@ -9,7 +9,10 @@ if %3=="" (exit 1)
 netsh advfirewall firewall add rule name="VcashPayAllow" dir=in action=allow protocol=TCP localport=16874
 netsh advfirewall firewall add rule name="VcashPayAllow2" dir=in action=allow protocol=TCP localport=16876
 
-echo nxt.apiServerHost=%2 >> %1  
-echo nxt.allowedBotHosts=* >> %1
-echo nxt.adminPassword=%3 >> %1
-echo nxt.myAddress=%2 >> %1
+mkdir %APPDATA%\VCASHPAY\
+mkdir %APPDATA%\VCASHPAY\conf\
+
+echo nxt.apiServerHost=%1 >> %APPDATA%\VCASHPAY\conf\nxt.properties
+echo nxt.allowedBotHosts=* >> %APPDATA%\VCASHPAY\conf\nxt.properties
+echo nxt.adminPassword=%2 >> %APPDATA%\VCASHPAY\conf\nxt.properties
+echo nxt.myAddress=%1 >> %APPDATA%\VCASHPAY\conf\nxt.properties
