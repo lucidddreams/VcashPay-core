@@ -14,7 +14,7 @@ var NRS = (function (NRS, $, undefined) {
             style = window.getComputedStyle(el)
         
             var tmp = style.getPropertyValue("min-height")
-            var int = parseInt(tmp)-100.4;
+            var int = parseInt(tmp)-101.4;
             document.getElementById("iframe").style.height=int+"px";
         NRS.pageLoaded();
     });
