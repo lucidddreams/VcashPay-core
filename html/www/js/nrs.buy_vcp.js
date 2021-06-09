@@ -24,9 +24,9 @@ var NRS = (function (NRS, $, undefined) {
         var sidebarId = 'sidebar_buy_vcp';
             var options = {
                 "id": sidebarId,
-                "titleHTML": '<i class="fa fa-plug"></i> <span data-i18n="buy_vcp">Buy VCP</span>',
+                "titleHTML": '<i class="fa fa-money"></i> <span data-i18n="buy_vcp">Buy VCP</span>',
                 "page": 'buy_vcp',
-                "desiredPosition": 120
+                "desiredPosition": 20
             };
             NRS.addSimpleSidebarMenuItem(options);
         
