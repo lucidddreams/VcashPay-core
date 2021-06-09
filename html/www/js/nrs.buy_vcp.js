@@ -8,11 +8,17 @@ var NRS = (function (NRS, $, undefined) {
             "account": NRS.account,
             "firstIndex": NRS.pageNumber * NRS.itemsPerPage - NRS.itemsPerPage,
             "lastIndex": NRS.pageNumber * NRS.itemsPerPage
-        }, function (response) {
+        }, function (response) {  
+            
+            var el = document.querySelector("body");
+            style = window.getComputedStyle(el)
+        
+            var tmp = style.getPropertyValue("min-height")
+            var int = parseInt(tmp)-100.4;
+            document.getElementById("iframe").style.height=int+"px";
         NRS.pageLoaded();
     });
     };
-
 
     NRS.setup.buy_vcp = function() {
         var sidebarId = 'sidebar_buy_vcp';
