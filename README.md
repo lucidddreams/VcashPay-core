@@ -6,13 +6,13 @@
 VCP is decentralized, sustainable, and secure digital money focused on addressing the inefficiencies present in existing financial systems. Uniquely designed to provide simple peer-to-peer transfer of value, VCP empowers individuals with the most efficient and accessible digital money possible, connecting them to the global economy with minimal impact. VCP provides an intuitive experience that feels like digital currency should – no fuss, low miner fees, 100x faster than traditional currency. This is what an accessible and easy-to-use digital money experience should feel like. 
 
 Getting Started
-• Get VCP - https://vcashpay.com
-• Web Wallet - https://coin.vcashpay.com
-• Windows Application - https://github.com/lucidddreams/VcashPay-core/releases
-• Source Code - https://github.com/lucidddreams/VcashPay-core/
-• API reference - https://coin.vcashpay.com/test
-• Custom Integration API login - https://api.vcashpay.com/admin/login/
-• Woocomerce plugin - https://github.com/lucidddreams/VCP-Woocomerce-Plugin
+  - Get VCP - https://vcashpay.com  
+  - Web Wallet - https://coin.vcashpay.com
+  - Windows Application - https://github.com/lucidddreams/VcashPay-core/releases
+  - Source Code - https://github.com/lucidddreams/VcashPay-core/
+  - API reference - https://coin.vcashpay.com/test
+  - Custom Integration API login - https://api.vcashpay.com/admin/login/
+  - Woocomerce plugin - https://github.com/lucidddreams/VCP-Woocomerce-Plugin
 
 ----
 ## Get it! ##
