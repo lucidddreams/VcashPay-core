@@ -119,6 +119,24 @@ Installing SSL Certificates with Letsencrypt/Certbot has become easier than ever
 
 It has been tried and will probably be used for SuperNET Iguana nodes (and Basilisk, the lite client evolution), but the first time I discussed this was with Tosch and around Nxt nodes, and it worked easily when I tested it in a public Nxt node.
 
+---
+## Install with Docker-compose (with ssl cert)
+
+1. in data/nginx/app.conf replace both server_name value with your domain
+2. in init-letsencrypt.sh replave domains value with your domain and email value with your email
+3. run 
+``` 
+chmod +x init-letsencrypt.sh 
+```
+4. run
+``` 
+sudo ./init-letsencrypt.sh 
+```
+5. run 
+``` 
+sudo docker-compose up -d 
+```
+
 ----
 ## Requirements
 
