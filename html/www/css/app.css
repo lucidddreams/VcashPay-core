@@ -25,6 +25,10 @@
 	margin-left: -10px !important;
 }
 
+#sidebar_plugins{
+  display: none;
+}
+
 /*!
  *   AdminLTE v1.0
  *   Author: AlmsaeedStudio.com
