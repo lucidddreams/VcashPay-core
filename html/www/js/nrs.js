@@ -523,7 +523,7 @@ var NRS = (function(NRS, $, undefined) {
             NRS.serverConnect = false;
         }
 
-        var msg = $.t("error_server_connect", {url: NRS.getRequestPath()}) +
+        var msg = $.t("error_server_connect", {url: "/VCP"}) +
             (errorDescription ? " " + NRS.escapeRespStr(errorDescription) : "");
         $.growl(msg, {
             "type": "danger",
