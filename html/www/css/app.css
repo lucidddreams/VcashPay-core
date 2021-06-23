@@ -2884,9 +2884,9 @@ a.list-group-item-header:hover {
     border:1px solid #D6E8C7;
     display:none;
 }
-#nrs_update_explanation > span {
+/* #nrs_update_explanation > span {
 	display:none;
-}
+} */
 .incorrect {
     background:#E2424F !important;
     color:white !important;

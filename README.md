@@ -220,3 +220,11 @@ Any improvements and alternatives for this procedure will be welcome.
 12. Run sudo crontab -e
 13. Add this 45 2 * * 6 /usr/bin/certbot renew --dry-run --renew-hook "service apache2 restart" and save
 
+
+## Verion update 
+
+Change version number in the following files:
+- html/config.xml
+- src/java/nxt/Nxt.java
+- conf/nxt-default.properties
+
