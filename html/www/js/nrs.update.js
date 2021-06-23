@@ -21,7 +21,7 @@ var NRS = (function(NRS, $) {
 	var DOWNLOAD_REPOSITORY_URL = "https://bitbucket.org/Jelurida/nxt/downloads/";
 	var index = 0;
 	var bundles = [
-		{alias: "nrsVersion", status: "release", prefix: "nxt-client-", ext: "zip",},
+		{alias: "nrsVersion", status: "release", prefix: "nxt-client-", ext: "zip"},
 		{alias: "nrsBetaVersion", status: "beta", prefix: "nxt-client-", ext: "zip"},
 		{alias: "nrsVersionWin", status: "release", prefix: "nxt-client-", ext: "exe"},
 		{alias: "nrsBetaVersionWin", status: "beta", prefix: "nxt-client-", ext: "exe"},
