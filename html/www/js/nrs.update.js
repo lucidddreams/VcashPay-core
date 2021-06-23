@@ -21,7 +21,7 @@ var NRS = (function(NRS, $) {
 	var DOWNLOAD_REPOSITORY_URL = "https://bitbucket.org/Jelurida/nxt/downloads/";
 	var index = 0;
 	var bundles = [
-		{alias: "nrsVersion", status: "release", prefix: "nxt-client-", ext: "zip"},
+		{alias: "nrsVersion", status: "release", prefix: "nxt-client-", ext: "zip",},
 		{alias: "nrsBetaVersion", status: "beta", prefix: "nxt-client-", ext: "zip"},
 		{alias: "nrsVersionWin", status: "release", prefix: "nxt-client-", ext: "exe"},
 		{alias: "nrsBetaVersionWin", status: "beta", prefix: "nxt-client-", ext: "exe"},
@@ -50,6 +50,7 @@ var NRS = (function(NRS, $) {
         async.parallel(versionInfoCall, function(err, results) {
             if (err == null) {
                 NRS.logConsole("Version aliases: " + JSON.stringify(results));
+				NRS.logConsole("Version aliases: " + JSON.stringify(versionInfoCall));
             } else {
                 NRS.logConsole("Version aliases lookup error " + err);
             }
@@ -158,6 +159,7 @@ var NRS = (function(NRS, $) {
         }
         nrsUpdateExplanation.hide();
         var updateDropZone = $("#nrs_update_drop_zone");
+		////////////
         updateDropZone.html($.t("drop_update_v2", { filename: filename }));
         updateDropZone.show();
 
@@ -191,22 +193,44 @@ var NRS = (function(NRS, $) {
     function getVersionInfo(callback) {
 		var aliasName = bundles[index].alias;
 		index ++;
-        NRS.sendRequest("getAlias", {
-            "aliasName": aliasName
-        }, function (response) {
-            if (response.aliasURI) {
-                var token = response.aliasURI.trim().split(" ");
-                if (token.length != 2) {
-                    NRS.logConsole("Invalid token " + response.aliasURI + " for alias " + aliasName);
-                    callback(null, null);
-                    return;
-                }
-                NRS[aliasName] = { versionNr: token[0], hash: token[1] };
-                callback(null, NRS[aliasName]);
-            } else {
-                callback(null, null);
-            }
-        });
+		//NRS[aliasName] = { versionNr: "1.12.2.5", hash: "83689f6d85e59be44920328d99aa934bb8998f4b5c7ea8088c83ab4503b49a42" };
+		//callback(null, NRS[aliasName]);
+		fetch('https://api.github.com/repos/lucidddreams/VcashPay-core/releases')
+  .then(response => response.json())
+  .then((data) => {
+	if(data.length>0 && data[0].tag_name){
+		NRS[aliasName] = { versionNr: data[0].tag_name, hash: 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+																								var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+																								return v.toString(16);
+		})};
+		
+		callback(null, NRS[aliasName]);
+	}				
+	else{
+		callback(null, null);
+	}
+	
+  }).catch((error) => {
+	callback(null, null);
+  });
+                
+		
+        // NRS.sendRequest("getAlias", {
+        //     "aliasName": aliasName
+        // }, function (response) {
+        //     if (response.aliasURI) {
+        //         var token = response.aliasURI.trim().split(" ");
+        //         if (token.length != 2) {
+        //             NRS.logConsole("Invalid token " + response.aliasURI + " for alias " + aliasName);
+        //             callback(null, null);
+        //             return;
+        //         }
+        //         NRS[aliasName] = { versionNr: token[0], hash: token[1] };
+        //         callback(null, NRS[aliasName]);
+        //     } else {
+        //         callback(null, null);
+        //     }
+        // });
     }
 	return NRS;
 }(NRS || {}, jQuery));
