@@ -387,13 +387,14 @@ var NRS = (function(NRS, $) {
    	});
 
     NRS.getFundAccountLink = function() {
-        return "<div class='callout callout-danger'>" +
-            "<span>" + $.t("fund_account_warning_1") + "</span><br>" +
-            "<span>" + $.t("fund_account_warning_2") + "</span><br>" +
-            "<span>" + $.t("fund_account_warning_3", { "symbol": NRS.constants.COIN_SYMBOL }) + "</span><br>" +
-            "</div>" +
-            "<a href='#' class='btn btn-xs btn-default' data-toggle='modal' data-target='#m_send_amount_sell_modal' " +
-            "data-pair='BTC_NXT'>" + $.t("fund_account_message", { "symbol": NRS.constants.COIN_SYMBOL }) + "</a>";
+        // return "<div class='callout callout-danger'>" +
+        //     "<span>" + $.t("fund_account_warning_1") + "</span><br>" +
+        //     "<span>" + $.t("fund_account_warning_2") + "</span><br>" +
+        //     "<span>" + $.t("fund_account_warning_3", { "symbol": NRS.constants.COIN_SYMBOL }) + "</span><br>" +
+        //     "</div>" +
+        //     "<a href='#' class='btn btn-xs btn-default' data-toggle='modal' data-target='#m_send_amount_sell_modal' " +
+        //     "data-pair='BTC_NXT'>" + $.t("fund_account_message", { "symbol": NRS.constants.COIN_SYMBOL }) + "</a>";
+       return  "<a href='#' class='btn btn-xs btn-default goto-page' onclick=\"NRS.goToPage('buy_vcp')\" data-page='buy_vcp'>Buy VCP</a>";
     };
 
     $('.coin-select.shape-shift ').change(function() {
