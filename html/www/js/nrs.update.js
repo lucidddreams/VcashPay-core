@@ -71,15 +71,16 @@ var NRS = (function(NRS, $) {
 
 		$("#nrs_update_explanation").find("> span").hide();
 		$("#nrs_update_explanation_wait").attr("style", "display: none !important");
-		if (installVersusNormal == -1 && installVersusBeta == -1) {
-			NRS.isOutdated = true;
-			$("#nrs_update").html($.t("outdated")).show();
-			$("#nrs_update_explanation_new_choice").show();
-		} else if (installVersusBeta == -1) {
-			NRS.isOutdated = false;
-			$("#nrs_update").html($.t("new_beta")).show();
-			$("#nrs_update_explanation_new_beta").show();
-		} else if (installVersusNormal == -1) {
+		// if (installVersusNormal == -1 && installVersusBeta == -1) {
+		// 	NRS.isOutdated = true;
+		// 	$("#nrs_update").html($.t("outdated")).show();
+		// 	$("#nrs_update_explanation_new_choice").show();
+		// } else if (installVersusBeta == -1) {
+		// 	NRS.isOutdated = false;
+		// 	$("#nrs_update").html($.t("new_beta")).show();
+		// 	$("#nrs_update_explanation_new_beta").show();
+		// }
+		if (installVersusNormal == -1) {
 			NRS.isOutdated = true;
 			$("#nrs_update").html($.t("outdated")).show();
 			$("#nrs_update_explanation_new_release").show();
@@ -193,8 +194,8 @@ var NRS = (function(NRS, $) {
     function getVersionInfo(callback) {
 		var aliasName = bundles[index].alias;
 		index ++;
-		//NRS[aliasName] = { versionNr: "1.12.2.5", hash: "83689f6d85e59be44920328d99aa934bb8998f4b5c7ea8088c83ab4503b49a42" };
-		//callback(null, NRS[aliasName]);
+		// NRS[aliasName] = { versionNr: "1.12.2.5", hash: "83689f6d85e59be44920328d99aa934bb8998f4b5c7ea8088c83ab4503b49a42" };
+		// callback(null, NRS[aliasName]);
 		fetch('https://api.github.com/repos/lucidddreams/VcashPay-core/releases')
   .then(response => response.json())
   .then((data) => {
