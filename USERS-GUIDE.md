@@ -2,7 +2,7 @@
 # USERS GUIDE #
 
 ----
-## What is in for me with Nxt? ##
+## What is in for me with VCP? ##
 
   - a **decentralized** platform for my assets like money, company shares etc.
   - almost all trusted third parties **removed**
@@ -17,7 +17,7 @@
 ----
 ## How does it work? ##
 
-### NRS (Nxt Reference Software) ###
+### NRS (VCP Reference Software) ###
 
   - client-server application
   - JavaFX UI on supported platforms
@@ -25,7 +25,7 @@
   - accounts are accessible from everywhere in the world
   - very strong and long passphrases required
 
-### Nxt ###
+### VCP ###
 
   - peer-to-peer protocol
   - efficient blockchain technology (can run on low-power devices)
@@ -37,7 +37,7 @@
   - reward for securing the network
   - start via the browser interface
   - requires only:
-    - decent amount of the base currency NXT
+    - decent amount of the base currency VCP
     - running NRS (browser or tab can be closed)
     - very little CPU power
 
@@ -47,7 +47,7 @@
   - review pull requests
   - help users on issues
   - join the forums and find places where you can help
-  - get your friends to join Nxt
+  - get your friends to join VCP
   - generate blocks via the forging capability
   - ask us, the dev team
 

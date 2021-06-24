@@ -12,6 +12,6 @@ if [ -e ~/.${APPLICATION}/nxt.pid ]; then
         STATUS=$?
     done
     rm -f ~/.${APPLICATION}/nxt.pid
-    echo "Nxt server stopped"
+    echo "VCP server stopped"
 fi
 
