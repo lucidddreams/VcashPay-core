@@ -61,7 +61,6 @@ VCP is a cryptocurrency to make the world a better place.
     - Go to conf directory 
     - Create a new file nxt.properties with
     ```
-
       nxt.isTestnet=true
       nxt.apiServerCORS=true
       nxt.uiServerCORS=true
