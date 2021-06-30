@@ -80,7 +80,7 @@ VCP is a cryptocurrency to make the world a better place.
 
   - Run testnet : 
   ```bash
-    sudo docker-compose -f docker-compose.yml up -d
+    sudo docker-compose -f docker-compose.testnet.yml up -d
   ```
 
 ----
@@ -143,7 +143,7 @@ sudo ./init-letsencrypt.sh
 ```
 5. run 
 ``` 
-sudo docker-compose up -d 
+sudo docker-compose -f docker-compose.yml up -d
 ```
 
 ----
