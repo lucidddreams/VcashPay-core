@@ -59,20 +59,30 @@ VCP is a cryptocurrency to make the world a better place.
             
  - If not using the Installer :
     - Go to conf directory 
-    - Create a new file nxt-installer.properties with
+    - Create a new file nxt.properties with
     ```
+
       nxt.isTestnet=true
-      nxt.myAddress=[your IP]
-      nxt.apiServerHost=[your IP]
-      nxt.adminPassword=[your password]
+      nxt.apiServerCORS=true
+      nxt.uiServerCORS=true
+      nxt.myAddress=SERVER_IP_ADDRESS
       nxt.allowedBotHosts=*
-      ```
+      nxt.allowedUserHosts=127.0.0.1; localhost; SERVER_IP_ADDRESS; 0:0:0:0:0:0:0:1;
+      nxt.enableAPIserver=true
+      nxt.apiServerHost=0.0.0.0
+      nxt.adminPassword=YOUR_PASSWORD
+    ```
       
   - Ports used :
     - 15874 (peer networking)
     - 6876  (UI)
     - 6877  (API_SSL)
     - Make sure to configure your Firewall
+
+  - Run testnet : 
+  ```bash
+    sudo docker-compose -f docker-compose.yml up -d
+  ```
 
 ----
 ## Further Reading ##
