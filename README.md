@@ -124,7 +124,7 @@ nxt.allowedUserHosts=127.0.0.1; localhost; SERVER_IP_ADDRESS; 0:0:0:0:0:0:0:1;
 nxt.enableAPIserver=true
 nxt.apiServerHost=0.0.0.0
 ```
-6. sudo docker build . -t vcash
+6. sudo docker build -f Dockerfile -t vcash .
 7. Followed by  sudo docker run -d -p  16876:16876 -p 16874:16874 --restart unless-stopped vcash
 8. Check if it runs using docker logs --follow and the id of the container
 9. Then follow this to add the https - https://nxtforum.org/public-nodes-vpss/method-to-configure-https-for-nxt-public-nodes/
@@ -236,4 +236,3 @@ Change version number in the following files:
 - html/config.xml
 - src/java/nxt/Nxt.java
 - conf/nxt-default.properties
-

@@ -4,8 +4,8 @@
 #
 # 1. install docker, see docker.com
 # 2. clone the git repo including this Dockerfile
-# 3. build the container with ```docker build -f -t vcash .```
-# 4. run the created vcp container with ```docker run -d -p 16876:16876 -p 16874:16874 vcash```
+# 3. build the container with ```docker build -t vcashtestnet .```
+# 4. run the created vcp container with ```docker run -d -p 6876:6876 -p 15874:15874 vcashtestnet```
 # 5. inspect with docker logs (image hash, find out with docker ps, or assign a name)
 
 FROM phusion/baseimage:0.9.21
@@ -37,5 +37,5 @@ RUN cd /nxt; chmod +x ./docker_start.sh
 
 RUN cd /nxt; ./compile.sh
 # both vcp ports get exposed
-EXPOSE 16876 16874
+EXPOSE 6876 15874
 CMD ["/nxt/docker_start.sh"]
