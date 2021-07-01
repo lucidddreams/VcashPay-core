@@ -227,4 +227,3 @@ Change version number in the following files:
 - html/config.xml
 - src/java/nxt/Nxt.java
 - conf/nxt-default.properties
-
