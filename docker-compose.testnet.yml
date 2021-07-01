@@ -1,4 +1,3 @@
-docker-compose.testnet.yml
 version: '3'
 services:
   nginx:
@@ -19,7 +18,9 @@ services:
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
   vcashpay:
     restart: always
-    build: .
+    build: 
+      context: .
+      dockerfile: testnet.Dockerfile
     ports:
       - "6876:6876"
       - "15874:15874"
