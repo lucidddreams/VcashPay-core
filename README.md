@@ -61,7 +61,6 @@ VCP is a cryptocurrency to make the world a better place.
     - Go to conf directory 
     - Create a new file nxt.properties with
     ```
-
       nxt.isTestnet=true
       nxt.apiServerCORS=true
       nxt.uiServerCORS=true
@@ -81,7 +80,7 @@ VCP is a cryptocurrency to make the world a better place.
 
   - Run testnet : 
   ```bash
-    sudo docker-compose -f docker-compose.yml up -d
+    sudo docker-compose -f docker-compose.testnet.yml up -d
   ```
 
 ----
@@ -144,7 +143,7 @@ sudo ./init-letsencrypt.sh
 ```
 5. run 
 ``` 
-sudo docker-compose up -d 
+sudo docker-compose -f docker-compose.yml up -d
 ```
 
 ----
