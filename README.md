@@ -59,20 +59,29 @@ VCP is a cryptocurrency to make the world a better place.
             
  - If not using the Installer :
     - Go to conf directory 
-    - Create a new file nxt-installer.properties with
+    - Create a new file nxt.properties with
     ```
       nxt.isTestnet=true
-      nxt.myAddress=[your IP]
-      nxt.apiServerHost=[your IP]
-      nxt.adminPassword=[your password]
+      nxt.apiServerCORS=true
+      nxt.uiServerCORS=true
+      nxt.myAddress=SERVER_IP_ADDRESS
       nxt.allowedBotHosts=*
-      ```
+      nxt.allowedUserHosts=127.0.0.1; localhost; SERVER_IP_ADDRESS; 0:0:0:0:0:0:0:1;
+      nxt.enableAPIserver=true
+      nxt.apiServerHost=0.0.0.0
+      nxt.adminPassword=YOUR_PASSWORD
+    ```
       
   - Ports used :
     - 15874 (peer networking)
     - 6876  (UI)
     - 6877  (API_SSL)
     - Make sure to configure your Firewall
+
+  - Run testnet : 
+  ```bash
+    sudo docker-compose -f docker-compose.testnet.yml up -d
+  ```
 
 ----
 ## Further Reading ##
@@ -106,7 +115,7 @@ nxt.allowedUserHosts=127.0.0.1; localhost; SERVER_IP_ADDRESS; 0:0:0:0:0:0:0:1;
 nxt.enableAPIserver=true
 nxt.apiServerHost=0.0.0.0
 ```
-6. sudo docker build . -t vcash
+6. sudo docker build -f Dockerfile -t vcash .
 7. Followed by  sudo docker run -d -p  16876:16876 -p 16874:16874 --restart unless-stopped vcash
 8. Check if it runs using docker logs --follow and the id of the container
 9. Then follow this to add the https - https://nxtforum.org/public-nodes-vpss/method-to-configure-https-for-nxt-public-nodes/
@@ -134,7 +143,7 @@ sudo ./init-letsencrypt.sh
 ```
 5. run 
 ``` 
-sudo docker-compose up -d 
+sudo docker-compose -f docker-compose.yml up -d
 ```
 
 ----
@@ -218,4 +227,3 @@ Change version number in the following files:
 - html/config.xml
 - src/java/nxt/Nxt.java
 - conf/nxt-default.properties
-
