@@ -4,7 +4,7 @@
 #
 # 1. install docker, see docker.com
 # 2. clone the git repo including this Dockerfile
-# 3. build the container with ```docker build -t vcashtestnet .```
+# 3. build the container with ```docker build -f testnet.Dockerfile -t vcashtestnet .```
 # 4. run the created vcp container with ```docker run -d -p 6876:6876 -p 15874:15874 vcashtestnet```
 # 5. inspect with docker logs (image hash, find out with docker ps, or assign a name)
 
