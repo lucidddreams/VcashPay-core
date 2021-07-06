@@ -4,7 +4,7 @@
 #
 # 1. install docker, see docker.com
 # 2. clone the git repo including this Dockerfile
-# 3. build the container with ```docker build -f -t vcash .```
+# 3. build the container with ```docker build -f Dockerfile -t vcash .```
 # 4. run the created vcp container with ```docker run -d -p 16876:16876 -p 16874:16874 vcash```
 # 5. inspect with docker logs (image hash, find out with docker ps, or assign a name)
 
