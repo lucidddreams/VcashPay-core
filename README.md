@@ -149,7 +149,7 @@ sudo docker-compose -f docker-compose.yml up -d
 ----
 ## Requirements
 
-1) A Linux server running Nxt, and configured for public API access. This should only require creating a nxt.properties under nxt/conf similar to this:
+1) A Linux server running VCP, and configured for public API access. This should only require creating a nxt.properties under nxt/conf similar to this:
 ```
 nxt.apiServerCORS=true
 nxt.uiServerCORS=true
@@ -212,7 +212,7 @@ Replace the default configuration lines with the following, replacing the string
 service apache2 restart
 ```
 
-As an example, you can check https://node001.nxtinside.org, and try a Nxt API request to that node using encrypted connection - https://node001.nxtinside.org/nxt?requestType=getState
+As an example, you can check https://coin.vcashpay.com/, and try a VCP API request to that node using encrypted connection - https://coin.vcashpay.com/nxt?requestType=getState
 
 Any improvements and alternatives for this procedure will be welcome.
 
