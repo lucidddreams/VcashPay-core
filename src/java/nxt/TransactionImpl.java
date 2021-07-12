@@ -1108,9 +1108,7 @@ final class TransactionImpl implements Transaction {
         if (referencedTransactionFullHash != null) {
             totalFee = Math.addExact(totalFee, Constants.ONE_NXT);
         }
-        long l = 0;
-        l = Math.addExact(l, (Constants.ONE_NXT/10));
-        return l;
+        return totalFee;
     }
 
 }
